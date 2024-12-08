@@ -11,7 +11,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://social-media-rose-omega.vercel.app")
+                .allowedOrigins("https://6457-115-240-194-54.ngrok-free.app","https://social-media-rose-omega.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("Jwt-Token"); // Expose JWT token in response headers
